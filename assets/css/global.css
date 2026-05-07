@@ -16,7 +16,7 @@
   --text-primary-color: #222222;
   --text-secondary-color: #ffffff;
 
-  --titles-weight: 700;
+  --title-weight: 700;
   --text-weight: 500;
   --menu-text-weight: 500;
 }
@@ -40,4 +40,24 @@ button {
 
 body {
   font-family: "Montserrat", sans-serif;
+  color: var(--text-primary-color);
+}
+.section-tittle h2 {
+  font-size: 28px;
+  font-weight: var(--titles-weight);
+  margin: 0;
+  text-align: center;
+}
+.section-tittle hr {
+  width: 180px;
+  height: 4px;
+  background-color: var(--secondary-color);
+  border: none;
+  margin: 6px auto 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-tittle h2{
+    font-size: 32px;
+  } 
 }
